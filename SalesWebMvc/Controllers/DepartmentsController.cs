@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using SalesWebMvc.Data;
 using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Controllers
@@ -62,7 +63,9 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(department);
+            
         }
+
 
         // GET: Departments/Edit/5
         public async Task<IActionResult> Edit(int? id)

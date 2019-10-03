@@ -4372,7 +4372,9 @@ input[type="button"].btn-block {
   padding-right: 0;
   padding-left: 0;
 }
-
+.nav-whitelink { 
+   color:#fff;
+}
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
